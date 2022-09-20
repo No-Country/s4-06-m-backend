@@ -25,6 +25,6 @@ public class User {
     @NotBlank(message = "Password cannot be empty.")
     @Size(min = 8, max = 250, message = "Password should have at least 8 characters")
     private String password;
-    private boolean softDeleted = false;
+   // private boolean softDeleted = false;
 
 }
