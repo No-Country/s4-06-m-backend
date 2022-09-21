@@ -31,7 +31,7 @@ public class User implements UserDetails {
     @Size(min = 8, max = 250, message = "Password should have at least 8 characters")
     private String password;
 
-    private boolean softDeleted = false;
+    private final boolean softDeleted = Boolean.FALSE;
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.MERGE)
     @JoinColumn(name = "role_id")
     private Role role;
@@ -62,7 +62,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return true;
+        return !this.softDeleted;
     }
 
 
