@@ -25,8 +25,8 @@ dependencies {
 
 	implementation 'com.amazonaws:aws-java-sdk-s3'
 	implementation 'br.com.caelum.vraptor:vraptor-amazonS3:4.0.1'
-	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.0.Final'
-	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.2'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
 	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.0.2'
 

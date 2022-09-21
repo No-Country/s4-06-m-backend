@@ -51,6 +51,7 @@ public class SecurityConfig {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
+                .antMatchers(publicEndpoint).permitAll()
                 //Auth
              /* .antMatchers(HttpMethod.POST,"/auth/register")
                 .permitAll()
@@ -68,7 +69,17 @@ public class SecurityConfig {
         http.headers().frameOptions().disable();
         return http.build();
     }
-
+    private static final String[] publicEndpoint = {
+            "/swagger-resources/**",
+            "/swagger-ui/**", "/v2/api-docs",
+            "/v3/api-docs",
+            "/api/docs",
+            "/api/docs/**",
+            "/api/docs/swagger-ui",
+            "/swagger-ui.html",
+            "/**/swagger-ui/**",
+            "/swagger-ui"
+    };
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
