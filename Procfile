@@ -1,2 +1,1 @@
-java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/*.jar
-
+web: java -jar build/libs/sport-0.0.1-SNAPSHOT.jar
