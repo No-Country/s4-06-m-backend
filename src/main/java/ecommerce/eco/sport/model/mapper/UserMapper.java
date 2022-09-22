@@ -19,7 +19,6 @@ public class UserMapper {
         return User.builder()
                 .email(request.getEmail())
                 .fullName(request.getFullName())
-                .softDeleted(Boolean.FALSE)
                 .password(passwordEncoder.encode(request.getPassword()))
                 .role(roleService.findBy(RolesEnum.USER.getFullRoleName()))
                 .build();

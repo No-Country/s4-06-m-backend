@@ -26,6 +26,7 @@ dependencies {
 	implementation 'br.com.caelum.vraptor:vraptor-amazonS3:4.0.1'
 	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
 	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+	implementation group: 'org.postgresql', name: 'postgresql', version: '42.3.6'
 	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
 	implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
 	implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
