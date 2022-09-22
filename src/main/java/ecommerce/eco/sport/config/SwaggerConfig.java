@@ -30,7 +30,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo() {
-        return new ApiInfo("Reserva tu habitación", "No Country .",
+        return new ApiInfo("Sport Eco", "No Country .",
                 "1.0", "Terms of service",
                  "sport@gmail.com", "License of API", "API license URL");
     }

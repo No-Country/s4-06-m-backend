@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 @Setter
 public class UserRequest {
     @NotBlank(message = "First Name Required")
-    private String lastName ;
+    private String fullName ;
     @NotBlank(message = "Email cannot be empty.")
     @Email
     private String email;
